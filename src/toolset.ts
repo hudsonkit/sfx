@@ -8,7 +8,6 @@
  * The client reads the compose_sound tool call from the UI message stream.
  */
 import { tool } from 'ai'
-import type { ToolsetDefinition } from '@hudsonkit/ai/toolsets'
 import { sfxPatchSchema } from './engine/patch'
 import { formatSfxDesignGuideForPrompt } from './engine/guide'
 
@@ -45,4 +44,10 @@ function tools() {
   }
 }
 
-export const sfxToolset: ToolsetDefinition = { system: SFX_SYSTEM_PROMPT, context, tools }
+export interface SfxToolsetDefinition {
+  system: string
+  context: (ctx: Record<string, unknown>) => string
+  tools: (ctx: Record<string, unknown>) => Record<string, unknown>
+}
+
+export const sfxToolset: SfxToolsetDefinition = { system: SFX_SYSTEM_PROMPT, context, tools }

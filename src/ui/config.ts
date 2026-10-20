@@ -1,6 +1,6 @@
 /**
  * Host configuration. SFX is a client app; the host owns the AI route (a
- * hudsonkit/@hudsonkit/ai chat endpoint serving the `sfx` toolset from
+ * host chat endpoint serving the `sfx` toolset from
  * `@hudsonkit/sfx/toolset`) and anything product-specific.
  */
 export interface SfxConfig {

@@ -9,7 +9,6 @@
         "zustand": "^5.0.14",
       },
       "devDependencies": {
-        "@hudsonkit/ai": "^0.2.2",
         "@types/react": "^19.2.17",
         "@types/react-dom": "^19.2.3",
         "ai": "^7.0.6",
@@ -22,14 +21,12 @@
         "vitest": "^4.1.9",
       },
       "peerDependencies": {
-        "@hudsonkit/ai": "^0.2.2",
         "ai": "^7.0.6",
         "hudsonkit": "^0.3.4",
         "react": "^19.0.0",
         "react-dom": "^19.0.0",
       },
       "optionalPeers": [
-        "@hudsonkit/ai",
         "ai",
       ],
     },
@@ -108,8 +105,6 @@
     "@floating-ui/react-dom": ["@floating-ui/react-dom@2.1.9", "", { "dependencies": { "@floating-ui/dom": "^1.8.0" }, "peerDependencies": { "react": ">=16.8.0", "react-dom": ">=16.8.0" } }, "sha512-JDjEFGCpImxDCA7JJKviA0M9+RtmJdj0m/NVU5IMgBK+AmZouAQQ7/+2GLH0GXXY0YMw9oXPB8hKdbPYg5QLYg=="],
 
     "@floating-ui/utils": ["@floating-ui/utils@0.2.12", "", {}, "sha512-HpCo8tmWzLVad5s2d19EhAz5zqrrQ6s69qd6moPMQvkOuSwDT1YgRfWSVuc4ennqrgv3OHppiOGMQ7oC13yIww=="],
-
-    "@hudsonkit/ai": ["@hudsonkit/ai@0.2.2", "", { "peerDependencies": { "@earendil-works/pi-ai": ">=0.74.0", "ai": ">=6.0.0" }, "optionalPeers": ["@earendil-works/pi-ai", "ai"] }, "sha512-OwBMGvpf8OiQwj83Lws0o7AdW1/D1RPcGLc7v4p+PGf2H07cFS/L2W/PojAawntzb8sjdvf5HM/g5bFcKBJmVQ=="],
 
     "@jridgewell/gen-mapping": ["@jridgewell/gen-mapping@0.3.13", "", { "dependencies": { "@jridgewell/sourcemap-codec": "^1.5.0", "@jridgewell/trace-mapping": "^0.3.24" } }, "sha512-2kkt/7niJ6MgEPxF0bYdQ6etZaA+fQvDcLKckhy1yIQOzaoKjBBjSj63/aLVjYE3qhRt5dvM+uUyfCg6UKCBbA=="],
 

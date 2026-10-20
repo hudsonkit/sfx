@@ -39,10 +39,10 @@ slots: { LeftPanel: SfxLeftPanel, Content: SfxContent, Inspector: SfxInspector }
 SFX composes through your chat route (Vercel AI SDK UI message stream). Register the toolset under the id the client uses (default `sfx`):
 
 ```ts
-import { defaultRegistry } from '@hudsonkit/ai/toolsets'
 import { sfxToolset } from '@hudsonkit/sfx/toolset'
 
-defaultRegistry.register('sfx', sfxToolset)
+// Supply sfxToolset to your host's chat route under the id `sfx`.
+// Provider connections belong to the host; SFX supplies its tools.
 ```
 
 The client sends `{ toolset, messages, context: { composition } }` and reads the `compose_sound` tool call from the stream. Each refinement sends the current patch as `context.composition`.

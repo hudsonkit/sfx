@@ -1,6 +1,6 @@
 import { defineConfig } from 'tsup'
 
-const external = ['react', 'react-dom', 'hudsonkit', /^hudsonkit\//, 'ai', /^@hudsonkit\/ai/, 'zod', 'zustand']
+const external = ['react', 'react-dom', 'hudsonkit', /^hudsonkit\//, 'ai', 'zod', 'zustand']
 
 export default defineConfig([
   // React app + UI: client-only.
